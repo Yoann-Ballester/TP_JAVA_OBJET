@@ -1,0 +1,30 @@
+package test.poe;
+
+import poe.random.Gem;
+
+public class TestUlt {
+	
+	
+	
+	static int  min=1;
+	static int max=10;
+	
+	public static int randomGem() {
+		  return (int) (min + Math.random()*max);
+		}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Gem g1 = new Gem("cyclone",1,"dex");
+		Gem g2 = new Gem("blade flurry",2,"dex");
+		Gem g3 = new Gem();
+		Gem g4 = new Gem();
+		Gem g5 = new Gem();
+		
+		
+	}
+
+}

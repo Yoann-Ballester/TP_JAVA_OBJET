@@ -8,6 +8,11 @@ public class Auteur extends Personne{
 		super(prenom,nom);
 		
 	}
+	
+	public Auteur() {
+		super();
+		
+	}
 
 	
 	

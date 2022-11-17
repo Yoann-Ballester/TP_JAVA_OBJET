@@ -21,6 +21,11 @@ public class Utilisateur extends Personne implements Nommable {
 		this.prenom = prenom;
 		this.idUtilisateur = idUtilisateur;
 	}
+	
+	public Utilisateur() {
+		super();
+		
+	}
 
 	@Override
 	public String getNom() {

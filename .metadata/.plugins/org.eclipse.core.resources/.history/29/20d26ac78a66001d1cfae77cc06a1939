@@ -1,0 +1,10 @@
+package poe.random;
+
+public class Spells {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package bookstore.test;
+
+import java.awt.geom.Path2D;
+
+import bookstore.metier.Auteur;
+import bookstore.metier.Personne;
+import bookstore.metier.Utilisateur;
+
+public class TestPolymorphisme {
+
+	public static void main(String[] args) {
+
+		Auteur a1 =new Auteur("Toto", "LeDeglingo");
+		Utilisateur u1= new Utilisateur("John", "Ceeenaaa","");
+		
+		a1.parle();
+		u1.parle();
+		
+		
+		Personne p1 = new Auteur(null, null);
+		Personne p2 = new Utilisateur(null, null, null);
+		
+		p1.parle();
+		p2.parle();
+		
+	}
+
+}

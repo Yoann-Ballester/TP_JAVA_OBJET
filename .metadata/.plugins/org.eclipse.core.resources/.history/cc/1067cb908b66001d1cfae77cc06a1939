@@ -1,0 +1,57 @@
+package poe.random;
+
+public class Gem {
+	
+	
+	private String nom;
+	private int id;
+	private String type;
+	
+	
+
+	public String getNom() {
+		return nom;
+	}	
+	public String getType() {
+		return type;
+	}
+
+
+
+
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Gem [nom=" + nom + ", id=" + id + "]";
+	}
+
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

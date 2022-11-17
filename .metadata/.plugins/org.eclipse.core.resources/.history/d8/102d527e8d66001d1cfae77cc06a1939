@@ -1,0 +1,24 @@
+package test.poe;
+
+public class TestUlt {
+	
+	
+	
+	static int  min=1;
+	static int max=10;
+	
+	public static int randomGem() {
+		  return (int) (min + Math.random()*max);
+		}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		System.out.println(randomGem());
+		
+	}
+
+}
