@@ -1,0 +1,28 @@
+package animal.domain;
+
+public class Chien extends Animal{
+
+	public Chien(String nom) {
+		setNom(nom);
+	}
+	
+	 public Chien() {
+		
+		super();
+	}
+
+
+	@Override
+	public String toString() {
+		return "Chien ["+ super.toString() + "]";
+	}
+
+
+	public static void main(String[] args) {
+		
+		Chien c1 = new Chien("medor");
+		
+		System.out.println(c1);
+		
+	}
+}

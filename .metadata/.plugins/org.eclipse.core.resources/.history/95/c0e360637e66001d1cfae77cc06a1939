@@ -1,0 +1,12 @@
+package bookstore.metier;
+
+public class Personne {
+
+	protected String nom;
+	protected String prenom;
+
+	public Personne() {
+		super();
+	}
+
+}

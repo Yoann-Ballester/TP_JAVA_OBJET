@@ -1,0 +1,15 @@
+package bookstore.test;
+
+import bookstore.metier.Livre;
+
+public class TestUtilisateur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Livre L1 = new Livre("Aaaaa","Bbbbb", 126, 15.56);
+	}
+
+}

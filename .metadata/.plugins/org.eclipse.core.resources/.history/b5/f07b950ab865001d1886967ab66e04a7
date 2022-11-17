@@ -1,0 +1,16 @@
+package bookstore.test;
+
+import bookstore.metier.Livre;
+
+public class TestCompare {
+	
+	public static void main(String[] args) {
+		
+		Livre L1 = new Livre("Tata", "TOTO", 126,12.13);
+		Livre L1 = new Livre("TITI", "tutu", 324,17.13);
+		
+		
+		System.out.println(L1.compareTo(L2));
+		
+	}
+}

@@ -1,0 +1,31 @@
+package bookstore.metier;
+
+public class Auteur extends Personne{
+	
+	
+	
+	public Auteur(String nom, String prenom) {
+		super(nom,prenom);
+		
+	}
+
+	
+	
+
+	@Override
+	public String toString() {
+		return "Auteur [nom=" + nom + ", prenom=" + prenom + "]";
+	}
+
+	@Override
+	public void parle() {
+		System.out.println("Argent");
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

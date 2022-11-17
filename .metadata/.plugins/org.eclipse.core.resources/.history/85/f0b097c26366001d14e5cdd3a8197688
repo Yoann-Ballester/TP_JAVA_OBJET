@@ -1,0 +1,39 @@
+package bookstore.metier;
+
+public class TypeDonneesAnnee {
+	
+	private int annee;
+
+	
+	
+	public TypeDonneesAnnee(int annee)  throws IllegalArgumentException{
+		super();
+		
+	setAnnee(annee);
+		
+	}
+			
+		
+		
+	
+
+	public int getAnnee() {
+		return annee;
+	}
+
+	public void setAnnee(int annee) {
+		if (annee<0) {
+			System.err.println("Annee doit etre > (superieur) à 0");
+		} else
+		this.annee = annee;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "[annee=" + annee + "]";
+	}
+	
+	
+	
+}

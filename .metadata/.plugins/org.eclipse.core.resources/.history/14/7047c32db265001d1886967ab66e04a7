@@ -1,0 +1,22 @@
+package bookstore.test;
+
+import bookstore.metier.Livre;
+import bookstore.metier.Utilisateur;
+
+public class TestUtilisateur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Livre L1 = new Livre("Aaaaa","Bbbbb", 126, 15.56);
+		Livre L2 = new Livre("Ccccc","Ddddd", 125, 17.56);
+		
+		
+		Utilisateur u1 = new Utilisateur("Toto", "LePGM", "36153615", L1);
+		
+		System.out.println(u1);
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="bookstorePackage.Livre"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Line2D"/>
+    <fullyQualifiedTypeName name="java.awt.print.Printable"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
+    <fullyQualifiedTypeName name="bookstore.metier.Comptable"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="bookstore.test.TestLivre"/>
+    <fullyQualifiedTypeName name="bookstore.test.TestComptable"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="bookstore.metier.Utilisateur"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="bookstore.test.TestCompare"/>
+    <fullyQualifiedTypeName name="bookstore.metier.Livre"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="bookstore.metier.Status"/>
+    <fullyQualifiedTypeName name="java.lang.StackTraceElement"/>
+    <fullyQualifiedTypeName name="bookstore.metier.TypeDonneesAnnee"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="animal.test.TestAnimal"/>
+    <fullyQualifiedTypeName name="animal.domain.Animal"/>
+</qualifiedTypeNameHistroy>

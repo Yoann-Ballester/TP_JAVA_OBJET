@@ -1,0 +1,56 @@
+package bookstore.metier;
+
+public class Personne implements Ibavard{
+
+	protected String nom;
+	protected String prenom;
+	
+	
+
+	public Personne(String nom, String prenom) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public Personne() {
+		super();
+	}
+
+	@Override
+	public void parle() {
+		
+		System.out.println("Beep boop");
+		
+	}
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Personne [nom=" + nom + ", prenom=" + prenom +"dit ="+ "]";
+	}
+
+	public static void main(String[] args) {
+		
+		
+		Personne p1 = new Personne("Jean Patrick", "le dingo");
+	}
+
+}

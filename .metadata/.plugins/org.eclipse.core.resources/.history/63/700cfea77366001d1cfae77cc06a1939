@@ -1,0 +1,5 @@
+package animal.domain;
+
+public class Homme extends Animal{
+
+}

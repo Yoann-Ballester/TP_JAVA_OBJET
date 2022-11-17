@@ -1,0 +1,9 @@
+package animal.domain;
+
+public class Homme extends Animal{
+
+	public Homme(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

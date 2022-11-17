@@ -1,0 +1,16 @@
+package animal.test;
+
+import animal.domain.Animal;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Animal [] animauxAnimals = new Animal[5];
+		animaux[0] = new Animal("Trucs");
+		
+	}
+
+}

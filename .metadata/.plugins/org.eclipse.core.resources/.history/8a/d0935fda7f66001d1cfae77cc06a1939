@@ -1,0 +1,14 @@
+package bookstore.metier;
+
+public class Auteur extends Personne{
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

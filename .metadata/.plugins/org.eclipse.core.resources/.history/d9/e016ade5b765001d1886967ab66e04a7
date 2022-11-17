@@ -1,0 +1,8 @@
+package bookstore.test;
+
+public class TestCompare {
+	
+	public static void main(String[] args) {
+		
+	}
+}

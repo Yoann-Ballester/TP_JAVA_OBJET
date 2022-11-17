@@ -1,0 +1,33 @@
+package bookstore.metier;
+
+public class Utilisateur {
+
+	
+	
+	private String nom;
+	private String prenom;
+	private String idUtilisateur;
+	private Livre emprunt;
+	
+	private int dureeMaxPret=15;
+
+	
+	
+	
+	public static String IsPretEnRetard() {
+		
+		
+		
+		return "Retard";
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

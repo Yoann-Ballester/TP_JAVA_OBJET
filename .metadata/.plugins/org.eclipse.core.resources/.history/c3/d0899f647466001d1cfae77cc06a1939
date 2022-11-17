@@ -1,0 +1,19 @@
+package animal.domain;
+
+public class Homme extends Animal{
+
+	
+	
+	
+	public Homme(String string) {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Homme ["+ super.toString() + "]";
+	}
+
+	
+
+}

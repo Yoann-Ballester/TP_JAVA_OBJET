@@ -1,0 +1,32 @@
+package bookstore.test;
+
+import bookstore.metier.Auteur;
+import bookstore.metier.Personne;
+import bookstore.metier.Utilisateur;
+
+public class TestPolymorphisme {
+
+	public static void main(String[] args) {
+
+		Auteur a1 =new Auteur("Toto", "LeDeglingo");
+		Utilisateur u1= new Utilisateur("John", "Ceeenaaa","");
+		
+		Personne p1 = new Personne();
+		p1=a1;
+		
+		Personne p2 = new Personne();
+		p2=u1;
+		
+		Personne p3 = new Personne();
+		
+		
+		
+		System.out.println(p1);
+		p1.parle();
+		
+		
+		System.out.println(p2);
+		p2.parle();
+	}
+
+}

@@ -1,0 +1,19 @@
+package bookstore.metier;
+
+public class Personne implements Ibavard{
+
+	protected String nom;
+	protected String prenom;
+
+	public Personne() {
+		super();
+	}
+
+	@Override
+	public void parle() {
+		
+		System.out.println("Beep boop");
+		
+	}
+
+}

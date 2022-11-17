@@ -1,0 +1,18 @@
+package bookstore.metier;
+
+public class Auteur extends Personne{
+	
+	public Auteur(String nom, String prenom) {
+		super(nom,prenom);
+		
+	}
+
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

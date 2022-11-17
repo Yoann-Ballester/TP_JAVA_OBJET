@@ -1,6 +1,9 @@
 package bookstore.test;
 
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import bookstore.metier.Livre;
 
 public class TestLivre {
@@ -34,7 +37,7 @@ public class TestLivre {
 //
 //		System.out.println(L3);
 //		
-		Livre L4 = new Livre("Uderzo", "Asterix", 300);
+		Livre L4 = new Livre("Uderzo", "Asterix", 300, 13.80);
 		Livre L5 = new Livre();
 		Livre L6 = new Livre("GHjghk", "Cool");
 		
@@ -51,9 +54,15 @@ public class TestLivre {
 		
 //		System.out.println("\n\n"+L5+"\n\n"+L6+"\n\n"+L4);
 		
-		System.out.println(L4.compare(L5));
+		L4.setDisponible(false);
 		
 		
+		
+		System.out.println(L4 + "\n\n" + L5 + "\n\n" + L6);
+		
+		//L4.setDateEmprunt(LocalDate.parse("2022-12-2"), DateTimeFormatter.ofPattern("yyyy-mm-d"));
+		
+		System.out.println(L4.getDateEmprunt());
 		
 	}
 
