@@ -9,35 +9,34 @@ import java.util.List;
 import poe.random.Gem;
 
 public class TestUlt {
-	
-	
-	
-	static int  min=1;
-	static int max=5;
-	
+
+	static int min = 1;
+	static int max = 5;
+
+	static int range = (max - min)+1;
+
 	public static int randomGem() {
-		  return (int) (min + Math.random()*max);
-		}
-	
+		return (int) (Math.random() * range) + min;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-			
-		List<Gem> gems = Arrays.asList(new Gem("cyclone",1,"dex"), new Gem("blade flurry",2,"dex"), new Gem("warchief totem", 3, "str"), new Gem("cold snap",4,"int"),new Gem("soulrend",5,"int"));
-		
-		for(Gem var:gems) {
-			
-			System.out.println(var);
-			
+		Gem[] gems = { new Gem("cyclone", 1, "dex"), new Gem("blade flurry", 2, "dex"),
+				new Gem("warchief totem", 3, "str"), new Gem("cold snap", 4, "int"), new Gem("soulrend", 5, "int") };
+
+				
+		for (Gem var : gems) {
+
+			if (randomGem() == var.getId()) {
+				System.out.println("(" + var.getNom() + ")");
+				break;
+			} else {
+				System.out.println(var.getNom());
+			}
+
 		}
-		//System.out.println(randomGem());
-		
-		if(randomGem()==1) {
-			System.out.println();
-		}
-		
-		
+
 	}
 
 }

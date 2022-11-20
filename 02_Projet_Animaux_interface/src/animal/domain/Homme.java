@@ -1,5 +1,7 @@
 package animal.domain;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Homme extends Mammifere{
 
 	
@@ -33,6 +35,11 @@ public class Homme extends Mammifere{
 		Homme h1 = new Homme("Jean patrick le ouf");
 		
 		System.out.println(h1);
+		
+		
+		System.out.println(h1.parle());
+		
+		
 		
 	}
 

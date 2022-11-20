@@ -21,19 +21,19 @@ public class TestAnimal {
 //		animaux[4] = new Homme("Robert");	
 		
 		
-		Animal animaux[] = new Animal[] {new Animal("Trucs"),new Animal(""),new Chien("Médor"),new Homme(""),new Homme("Robert") };
+	//	Animal animaux[] = new Animal[] {new Animal("Trucs"),new Animal(""),new Chien("Médor"),new Homme(""),new Homme("Robert") };
 				
 //		for(int i = 0; i<animaux.length;i++) {
 //			System.out.println(animaux[i]);
 //		}
+//		
+//		for (Animal var:animaux) {
+//			System.out.println(var);
+//		}
+//		
+//		System.out.println();
 		
-		for (Animal var:animaux) {
-			System.out.println(var);
-		}
-		
-		System.out.println();
-		
-		List<Animal> animaux2 = Arrays.asList(new Animal("Trucs"),new Animal(""),new Chien("Médor"), new Homme(""), new Homme("Robert"));
+		List<Animal> animaux2 = Arrays.asList(new Animal("Truc"),new Animal(),new Chien("Médor"), new Homme(), new Homme("Robert"));
 		
 		for (Animal var:animaux2) {
 			System.out.println(var);
