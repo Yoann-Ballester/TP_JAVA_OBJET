@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 import animal.domain.Animal;
+import animal.domain.AnimalException;
 import animal.domain.Chien;
 import animal.domain.Homme;
 import animal.domain.Mammifere;
@@ -63,20 +64,38 @@ public class TestAnimal {
 // System.out.println("\n");
  
  
- ArrayList<Animal> animalo = new ArrayList<>();
- animalo.add(new Homme("Robert"));
- animalo.add(new Chien( "Medor"));
+ 
+ try {
+	 ArrayList<Animal> animalo = new ArrayList<>();
+	animalo.add(new Homme("Robertoooo"));
+	animalo.add(new Chien( "Medor"));
+	
+	Collections.sort(animalo, Collections.reverseOrder());
+	 
+	 
+	 for (Animal var:animalo) {
+		 
+		 System.out.println(var.parle());
+	 }
+	 
+} catch (AnimalException e1) {
+	// TODO Auto-generated catch block
+	e1.printStackTrace();
+}
  
  
   //Collections.sort(animalo);
-Collections.sort(animalo, Collections.reverseOrder());
+
  
  
- for (Animal var:animalo) {
-	 
-	 System.out.println(var.parle());
- }
  
+ try {
+	Animal a = new Animal("joooohn Ceeeenaaaaaaaaaaaa");
+	System.out.println(a);
+} catch (AnimalException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
  
  
  

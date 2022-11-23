@@ -2,7 +2,7 @@ package animal.domain;
 
 public class Chien extends Mammifere{
 
-	public Chien(String nom) {
+	public Chien(String nom) throws AnimalException{
 		super(nom);
 	}
 	
@@ -25,9 +25,16 @@ public class Chien extends Mammifere{
 
 	public static void main(String[] args) {
 		
-		Chien c1 = new Chien("medor");
+		Chien c1;
+		try {
+			c1 = new Chien("medor");
+			System.out.println(c1.parle());
+		} catch (AnimalException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		System.out.println(c1.parle());
+		
 		
 	}
 }

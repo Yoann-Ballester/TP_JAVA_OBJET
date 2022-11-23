@@ -2,7 +2,7 @@ package animal.domain;
 
 public class Mammifere extends Animal{
 	
-	public Mammifere(String nom) {
+	public Mammifere(String nom) throws AnimalException {
 		super(nom);
 	}
 	
@@ -33,8 +33,15 @@ public class Mammifere extends Animal{
 		// TODO Auto-generated method stub
 
 		
-		Mammifere m = new Mammifere("Patate");
-		System.out.println(m);
+		Mammifere m;
+		try {
+			m = new Mammifere("Patataaaaaa");
+			System.out.println(m);
+		} catch (AnimalException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	

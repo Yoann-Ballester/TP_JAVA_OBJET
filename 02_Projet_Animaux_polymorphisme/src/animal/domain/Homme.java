@@ -15,7 +15,7 @@ public class Homme extends Mammifere{
 
 	
 
-	public Homme(String nom) {
+	public Homme(String nom) throws AnimalException{
 		super(nom);
 	}
 
@@ -37,12 +37,19 @@ public class Homme extends Mammifere{
 	
 	public static void main(String[] args) {
 		
-		Homme h1 = new Homme("Jean patrick le ouf");
+		Homme h1;
+		try {
+			h1 = new Homme("Jean patrick le ouf");
+			System.out.println(h1);
+			
+			
+			System.out.println(h1.parle());
+		} catch (AnimalException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		System.out.println(h1);
-		
-		
-		System.out.println(h1.parle());
+	
 		
 		
 		

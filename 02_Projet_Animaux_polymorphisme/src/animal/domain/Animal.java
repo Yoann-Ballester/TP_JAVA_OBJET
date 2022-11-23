@@ -1,20 +1,26 @@
 package animal.domain;
 
-public  class Animal implements Nommable, Comparable<Animal> {
+public class Animal implements Nommable, Comparable<Animal> {
 
 	private String nom = "";
 
-	public Animal(String nom) {
+	public Animal(String nom) throws AnimalException {
+		
 		super();
-		this.nom = nom;
+		setNom(nom);
+
 	}
 
 	public Animal() {
 
 	}
 
-	public void setNom(String nom) {
-		this.nom = nom;
+	public void setNom(String nom) throws AnimalException {
+		if (nom.length() > 15) {
+			throw new AnimalException("Le nom ne peut pas faire plus de 15 caracteres");
+		}else {
+			this.nom = nom;
+		}
 	}
 
 	@Override
@@ -31,7 +37,7 @@ public  class Animal implements Nommable, Comparable<Animal> {
 		return "Je suis un animal de nom " + nom + ".";
 	}
 
-	public  String parle() {
+	public String parle() {
 		return (nom + " parle :" + "brrrrrrrrrrrrrrrrrrrrrrr");
 	}
 
@@ -48,19 +54,18 @@ public  class Animal implements Nommable, Comparable<Animal> {
 	public int compareTo(Animal obj) {
 		// TODO Auto-generated method stub
 
-		if (obj.getNom().charAt(0)<this.getNom().charAt(0)) {
+		if (obj.getNom().charAt(0) < this.getNom().charAt(0)) {
 
 			return 1;
 		}
-		
-		else if (obj.getNom().charAt(0)==this.getNom().charAt(0)) {
-		return 0;
-		}else {
-			
+
+		else if (obj.getNom().charAt(0) == this.getNom().charAt(0)) {
+			return 0;
+		} else {
+
 			return -1;
 		}
-		
-		
+
 	}
 
 }
