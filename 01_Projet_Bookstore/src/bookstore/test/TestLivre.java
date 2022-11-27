@@ -52,6 +52,7 @@ public class TestLivre {
 		L6.setNBpages(300);
 		L6.setPrix(0);
 		
+		
 //		System.out.println("\n\n"+L5+"\n\n"+L6+"\n\n"+L4);
 		
 		L4.setDisponible(false);

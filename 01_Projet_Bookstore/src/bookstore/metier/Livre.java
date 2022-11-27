@@ -1,8 +1,8 @@
 package bookstore.metier;
 
 import java.text.DecimalFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Objects;
 
 public class Livre implements Comparable<Livre> {
@@ -16,8 +16,8 @@ public class Livre implements Comparable<Livre> {
 	private boolean disponible=true;
 	private TypeDonneesAnnee annee;
 	Status status = Status.DISPONIBLE;
-	LocalDate dateEmprunt;
-	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy");
+	Date dateEmprunt;
+	public static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
 	
 	
 	static Comptable comptable = new Comptable();
@@ -25,11 +25,14 @@ public class Livre implements Comparable<Livre> {
 	
 	// contructeur
 	
-	public Livre(String unAuteur, String unTitre, int Pages,boolean dispo, double Prix, LocalDate dateEmp, TypeDonneesAnnee dparution) {
+			
+	
+	
+	public Livre(String unAuteur, String unTitre, int Pages, double Prix, Date dateEmp, TypeDonneesAnnee dparution) {
 		auteur = unAuteur;
 		titre = unTitre;
 		nbPages = Pages;
-		disponible=dispo;
+		
 		setPrix(Prix);
 		dateEmprunt=dateEmp;
 		annee=dparution;
@@ -112,16 +115,12 @@ public class Livre implements Comparable<Livre> {
 	}
 	
 
-	public LocalDate getDateEmprunt() {
+	public Date getDateEmprunt() {
 		return dateEmprunt;
 	}
 
 
 
-
-	public DateTimeFormatter getDtf() {
-		return dtf;
-	}
 
 
 	
@@ -174,14 +173,12 @@ public class Livre implements Comparable<Livre> {
 		
 	}
 	
-	public void setDateEmprunt(LocalDate dateEmprunt) {
+	public void setDateEmprunt(Date dateEmprunt) {
 		this.dateEmprunt = dateEmprunt;
 	}
 	
 	
-	public void setDtf(DateTimeFormatter dtf) {
-		this.dtf = dtf;
-	}
+
 
 	public void setDisponible(boolean disponible) {
 		this.disponible = disponible;
@@ -245,11 +242,11 @@ public class Livre implements Comparable<Livre> {
 	@Override public String toString() {
 		
 		if (PrixL<0) {
-			return("Auteur :"+ auteur+"\n" + "titre : "+ titre +"\n"+ "nombre de pages : "+ nbPages + " \nPrix : "+ "Prix indertermine" + "\ndispo : "+disponible + "\ndate emprunt : "+ dateEmprunt + "\nStatut : "+status +"\ndate de parution : "+annee);
+			return("Auteur :"+ auteur+"\n" + "titre : "+ titre +"\n"+ "nombre de pages : "+ nbPages + " \nPrix : "+ "Prix indertermine" + "\ndate emprunt : "+ dateEmprunt + "\nStatut : "+status +"\ndate de parution : "+annee);
 		}
 			
 		else {
-			return("Auteur :"+ auteur+"\n" + "titre : "+ titre +"\n"+ "nombre de pages : "+ nbPages + " \nPrix : "+ new DecimalFormat("#.##").format(PrixL)  + "\ndispo : "+disponible +"\ndate emprunt : "+ dateEmprunt + "\nStatut : "+status +"\ndate de parution : "+annee);
+			return("Auteur :"+ auteur+"\n" + "titre : "+ titre +"\n"+ "nombre de pages : "+ nbPages + " \nPrix : "+ new DecimalFormat("#.##").format(PrixL)  +"\ndate emprunt : "+ dateEmprunt + "\nStatut : "+status +"\ndate de parution : "+annee);
 		}
 		
 	}
