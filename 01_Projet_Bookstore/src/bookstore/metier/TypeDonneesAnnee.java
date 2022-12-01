@@ -25,8 +25,10 @@ public class TypeDonneesAnnee {
 
 	public void setAnnee(int annee) throws IllegalArgumentException {
 		if (annee<0) {
-			System.err.println("Annee doit etre > (superieur) à 0");
+			//System.err.println("Annee doit etre > (superieur) à 0");
 			this.annee=0;
+			throw new IllegalArgumentException("Annee doit etre > (superieur) à 0");
+		
 		} else
 		this.annee = annee;
 		

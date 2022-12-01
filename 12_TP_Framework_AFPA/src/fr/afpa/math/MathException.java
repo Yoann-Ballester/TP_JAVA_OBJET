@@ -12,7 +12,7 @@ public class MathException extends Exception {
 	}
 
 	public MathException() {
-		super();
+		super("Un probleme generique sur l'application Math est survenu");
 	}
 
 	

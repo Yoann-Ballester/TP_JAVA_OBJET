@@ -55,7 +55,7 @@ public class TestLivre {
 		
 //		System.out.println("\n\n"+L5+"\n\n"+L6+"\n\n"+L4);
 		
-		L4.setDisponible(false);
+		
 		
 		
 		

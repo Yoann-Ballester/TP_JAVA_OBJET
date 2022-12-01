@@ -15,7 +15,7 @@ public class TestComptable {
 		
 		System.out.println("Le prix total des livres est de : "+ Livre.getTotalPrix());
 		
-		System.out.println(L1.hashCode());
+		System.out.println("\n"+L2.hashCode());
 		
 		System.out.println(L1.equals(L3));
 	}

@@ -1,11 +1,10 @@
 package bookstore.test;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+
 import java.util.Collections;
-import java.util.Comparator;
+
 
 import bookstore.metier.Livre;
 
@@ -35,7 +34,13 @@ public class TestCompare {
 			System.out.println("\n" + val);
 		}
 
-		// System.out.println(L1.compareTo(L2));
+		
+		// 
+		 System.out.println("\n"+L1.compareTo(L2));
+		 
+		 
+		 // static
+		 System.out.println(Livre.compare(L2, L1));
 
 	}
 }

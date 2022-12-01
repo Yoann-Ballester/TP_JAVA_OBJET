@@ -8,7 +8,7 @@ public class AnimalException extends Exception {
 	private static final long serialVersionUID = 1L;
 	
 	public AnimalException() {
-		
+		super("Un probleme general est survenu sur l'application Animal");
 	}
 	
 	public AnimalException(String message) {

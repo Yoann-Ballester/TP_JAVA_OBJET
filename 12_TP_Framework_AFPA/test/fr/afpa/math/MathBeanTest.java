@@ -56,11 +56,11 @@ class MathBeanTest {
 		
 
 		// max capacité 7654
-//		int nbr2 = 3000;
-//		System.out.println("\nLa factorielle de " + nbr2 + " est : " + bean.factorielBig(nbr2));
+		int nbr2 = 7700;
+		System.out.println("\nLa factorielle de " + nbr2 + " est : " + bean.factorielBig(nbr2));
 
-//		int f = 456;
-//		System.out.println(" \nresultat de la conversion de " + f + " euros en "
-//				+ Convert.euroToDollar(BigDecimal.valueOf(f)) + " dollars");
+		int f = 456;
+		System.out.println(" \nresultat de la conversion de " + f + " euros en "
+				+ Convert.euroToDollar(BigDecimal.valueOf(f)) + " dollars");
 	}
 }

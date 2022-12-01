@@ -75,6 +75,7 @@ public class TestAnimal {
 	 
 	 for (Animal var:animalo) {
 		 
+		// System.out.println(var);
 		 System.out.println(var.parle());
 	 }
 	 

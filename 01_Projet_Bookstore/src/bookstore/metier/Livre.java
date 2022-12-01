@@ -2,6 +2,7 @@ package bookstore.metier;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
@@ -13,10 +14,11 @@ public class Livre implements Comparable<Livre> {
 	private int nbPages;
 	private double PrixL= -1;	
 	private boolean prixFixe=false;
-	private boolean disponible=true;
 	private TypeDonneesAnnee annee;
 	Status status = Status.DISPONIBLE;
-	Date dateEmprunt;
+	LocalDate dateEmprunt;
+	
+	
 	public static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
 	
 	
@@ -28,7 +30,7 @@ public class Livre implements Comparable<Livre> {
 			
 	
 	
-	public Livre(String unAuteur, String unTitre, int Pages, double Prix, Date dateEmp, TypeDonneesAnnee dparution) {
+	public Livre(String unAuteur, String unTitre, int Pages, double Prix, LocalDate dateEmp, TypeDonneesAnnee dparution) {
 		auteur = unAuteur;
 		titre = unTitre;
 		nbPages = Pages;
@@ -115,7 +117,7 @@ public class Livre implements Comparable<Livre> {
 	}
 	
 
-	public Date getDateEmprunt() {
+	public LocalDate getDateEmprunt() {
 		return dateEmprunt;
 	}
 
@@ -173,16 +175,14 @@ public class Livre implements Comparable<Livre> {
 		
 	}
 	
-	public void setDateEmprunt(Date dateEmprunt) {
+	public void setDateEmprunt(LocalDate dateEmprunt) {
 		this.dateEmprunt = dateEmprunt;
 	}
 	
 	
 
 
-	public void setDisponible(boolean disponible) {
-		this.disponible = disponible;
-	}
+
 
 	public void setAnnee(TypeDonneesAnnee annee) {
 		this.annee = annee;
@@ -210,12 +210,12 @@ public class Livre implements Comparable<Livre> {
 	}
 
 
-	public int compare(Livre obj) {
+	public static int compare(Livre obj,Livre autre) {
 		
-		if (this.nbPages==obj.nbPages ) {
+		if (autre.nbPages==obj.nbPages ) {
 			return 0;
 		}
-		else if (this.nbPages>obj.nbPages) {
+		else if (autre.nbPages>obj.nbPages) {
 			return 1;
 		}else {
 			return -1;

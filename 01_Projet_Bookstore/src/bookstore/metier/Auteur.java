@@ -19,7 +19,7 @@ public class Auteur extends Personne{
 
 	@Override
 	public String toString() {
-		return "Auteur [nom=" + nom + ", prenom=" + prenom + "]";
+		return super.toString();
 	}
 
 	@Override
@@ -34,6 +34,8 @@ public class Auteur extends Personne{
 		
 		System.out.println(a1.getPrenom()+" "+ a1.getNom()+" dit : ");
 		a1.parle();
+		
+		
 	}
 
 	

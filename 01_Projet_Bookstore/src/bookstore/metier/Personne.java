@@ -40,7 +40,7 @@ public abstract class Personne implements Ibavard{
 	
 	@Override
 	public String toString() {
-		return "Personne [nom=" + nom + ", prenom=" + prenom +"]";
+		return "[nom=" + nom + ", prenom=" + prenom +"]";
 	}
 
 	public static void main(String[] args) {

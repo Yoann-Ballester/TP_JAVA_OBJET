@@ -1,5 +1,7 @@
 package bookstore.test;
 
+import java.util.ArrayList;
+
 import bookstore.metier.Livre;
 import bookstore.metier.Status;
 import bookstore.metier.Utilisateur;
@@ -11,26 +13,35 @@ public class TestEmprunt {
 		
 		Livre L1 = new Livre("Aaaa", "Tintin");
 		Livre L2 = new Livre("Bbbbb", "Asterix");
-		
-		Utilisateur u1 = new Utilisateur("Toto","tata", "1", L2);
-		L2.setStatus(Status.PRETE);
-		Utilisateur u2 = new Utilisateur("Zorro","tata", "1", L1);
-		L1.setStatus(Status.PRETE);
+		Livre L3 = new Livre("Ccccc", "Ddddd");
 		
 		
-		System.out.println(u1+"\n"+u2);
+		ArrayList<Livre> livres = new ArrayList<>();
+		livres.add(L1);
+		livres.add(L2);
+		
+		Utilisateur u1 = new Utilisateur("Toto","tata", "1");
+		
+		Utilisateur u2 = new Utilisateur("Zorro","tata", "2");
 		
 		
-		u1.setEmprunt(null);
-		u2.setEmprunt(null);
-		L1.setStatus(Status.DISPONIBLE);
-		L2.setStatus(Status.DISPONIBLE);
+		u2.setEmprunt(L3);
+		L3.setStatus(Status.PRETE);
 		
-		System.out.println(u1+"\n"+u2);
 		
-		u1.setEmprunt(L1);
-		L1.setStatus(Status.PRETE);
-		System.out.println(u1+"\n"+u2);
+		//u1.addLivres(livres);
+		
+		u1.addLivre(L1);
+		u1.addLivre(L2);
+
+		
+		System.out.println(u1);
+		
+		System.out.println("\n"+u2);
+		
+
+
+
 
 	}
 

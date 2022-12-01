@@ -16,28 +16,32 @@ public class TestAnimal {
 		// TODO Auto-generated method stub
 
 		
-//		Animal [] animaux = new Animal[3];
-//		animaux[0] = new Animal("Trucs");		
-//		animaux[1] = new Chien("Médor");		
-//		animaux[2] = new Homme("Robert");	
-//		
-//		for(int i = 0;i<animaux.length; i++) {
-//			
-//			System.out.println(animaux[i].parle());
-//			
-//		}
+		Animal [] animaux = new Animal[3];
+		animaux[0] = new Animal("Trucs");		
+		animaux[1] = new Chien("Médor");		
+		animaux[2] = new Homme("Robert");	
 		
-//		if (animaux[2] instanceof Nommable) {
-//			
-//			
-//			System.out.println(true);
-//			
-//		}else {
-//			System.out.println(false);
-//		}
-//		
-//		System.out.println(animaux[2].getClass());
+		for(int i = 0;i<animaux.length; i++) {
+			
+			System.out.println(animaux[i].parle());
+			
+		}
 		
+		////////////////////////////////////
+		
+		if (animaux[2] instanceof Nommable) {
+			
+			
+			System.out.println(true);
+			
+		}else {
+			System.out.println(false);
+		}
+		
+		
+		
+		//System.out.println(animaux[2].getClass());
+		System.out.println("\n");
 
 		Comparable<Animal> [] test = new Animal[3];
 		test[0] = new Animal("Trucs");		
@@ -53,7 +57,7 @@ for(int i = 0;i<test.length; i++) {
 			
 		}
 		
-		//System.out.println(animaux[1].compareTo(animaux[2]));
+	//System.out.println(animaux[1].compareTo(animaux[2]));
 		
 		
 	}
