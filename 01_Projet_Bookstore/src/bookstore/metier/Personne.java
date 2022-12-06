@@ -1,6 +1,6 @@
 package bookstore.metier;
 
-public abstract class Personne implements Ibavard{
+public abstract class Personne implements Ibavard, Nommable{
 
 	protected String nom;
 	protected String prenom;

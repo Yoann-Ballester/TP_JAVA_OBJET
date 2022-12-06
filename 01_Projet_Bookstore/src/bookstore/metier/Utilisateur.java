@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 
-public class Utilisateur extends Personne implements Nommable {
+public class Utilisateur extends Personne  {
 
 	private String idUtilisateur;
 	private Livre emprunt;
