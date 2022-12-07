@@ -100,8 +100,21 @@ public class Article implements Payable{
 		
 	}
 	
-	static double somme = 0;
+	static double  somme = 0;
+	
+	
+	public static double getTotalPrix(Article article) {
+		 somme = somme+article.getPrixUnitaire();
+		 
+		 return somme;
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
+		
+		
 		Article a = new Article(145,"ddsgsg",156.,EnumStatusStock.NON_VIDE);
 		Article b = new Article(145,"ddsgsg",556.,EnumStatusStock.NON_VIDE);
 		Article c = new Article(145,"ddsgsg",56.,EnumStatusStock.NON_VIDE);
@@ -111,12 +124,15 @@ public class Article implements Payable{
 		articles.add(b);
 		articles.add(c);
 		
+//		System.out.println(getTotalPrix(c));
+//		System.out.println(getTotalPrix(b));
+//		System.out.println(getTotalPrix(a));
 		
-		for (Article var:articles) {	
-			
-			somme = somme + var.getPrixUnitaire();
+		for (Article var:articles) {
+			System.out.println(getTotalPrix(var));
 		}
-		System.out.println(somme);
+		
+		
 		
 		//System.out.println(articles.get(1).getPrixUnitaire());
 	}

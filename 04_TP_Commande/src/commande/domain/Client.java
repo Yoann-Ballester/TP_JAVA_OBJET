@@ -152,6 +152,7 @@ public class Client extends Personne {
 		//System.out.println(titi.getCmd2());
 		
 		
+	
 		
 		
 		for (Article var:articles) {	

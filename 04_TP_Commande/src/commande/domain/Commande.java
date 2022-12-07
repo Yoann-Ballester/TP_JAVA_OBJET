@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Commande {
 
-	public ArrayList<Article> Article = new ArrayList<>();
+	public ArrayList<Article> articles = new ArrayList<>();
 	
     /**
      * Default constructor
@@ -66,14 +66,14 @@ public class Commande {
     
 
 	public ArrayList<Article> getArticle() {
-		return Article;
+		return articles;
 	}
 
 
 
 
 	public void setContient(ArrayList<Article> article) {
-		this.Article = article;
+		this.articles = article;
 	}
 
 
@@ -138,18 +138,47 @@ public class Commande {
 	@Override
 	public String toString() {
 		return "Commande [noCommande=" + noCommande + ", adresseLivraison=" + adresseLivraison + ", dateCommande="
-				+ dateCommande + ", qte=" + qte + Article+ "]";
+				+ dateCommande + ", qte=" + qte + articles+ "]";
 	}
 	
 	public void addArticle(Article artcl) {
-		this.Article.add(artcl);
+		this.articles.add(artcl);
 	}
 
 
-
-
+	public static double comm;
+	public static double  getTotalCom(ArrayList<Article> articles) {
+		for(Article var:articles) {
+			comm = Article.getTotalPrix(var);
+		}
+		return comm;
+	}
+	
+	public  double getTotalCommande() {
+		return getTotalCom(articles);
+	}
 
     
-
+public static void main(String[] args) throws ParseException {
+	Article a = new Article(145,"ddsgsg",156.,EnumStatusStock.NON_VIDE);
+	Article b = new Article(145,"ddsgsg",556.,EnumStatusStock.NON_VIDE);
+	Article c = new Article(145,"ddsgsg",56.,EnumStatusStock.NON_VIDE);
+	
+	ArrayList<Article> articles = new ArrayList<>() ;
+	articles.add(a);
+	articles.add(b);
+	articles.add(c);
+	
+	Commande cdeNoel = new Commande(4, "Chelles", Commande.sdf.parse("20/10/25"), 1);
+	
+	cdeNoel.addArticle(c);
+	cdeNoel.addArticle(b);
+	cdeNoel.addArticle(a);
+	
+	System.out.println(cdeNoel.getTotalCommande());
+	
+	
+	
+}
 
 }
